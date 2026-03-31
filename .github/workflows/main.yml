@@ -1,0 +1,21 @@
+name: SRE Pipeline
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Step 1 - Print message
+        run: echo "Pipeline Started"
+
+      - name: Step 2 - Simulate build
+        run: echo "Building application..."
+
+      - name: Step 3 - Simulate test
+        run: echo "Running tests..."
+
+      - name: Step 4 - Done
+        run: echo "Deployment Ready"
